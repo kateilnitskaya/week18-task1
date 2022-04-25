@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш питомец</title>
+</head>
+
+<body>
+    <h1>Познакомимся с вашей кошкой</h1>
+
+    <form>
+        <div>
+            <label for="name">Кличка питомца</label>
+            <input type="text" id="name" required>*
+        </div>
+        <div>
+            <label for="contacts">Имя и контакты владельца</label>
+            <input type="text" id="contacts" required>*
+        </div>
+        <div>
+            Порода питомца
+            <select>
+                <option value="1">мейн-кун</option>
+                <option value="2">персидская</option>
+                <option value="3">бенгальская</option>
+                <option value="4">сиамская</option>
+                <option value="5">сфинкс</option>
+            </select> *
+        </div>
+        <br>
+        <div>
+            Чем питается? <br>
+            <input type="checkbox" name="option1" value="a1">Сухой корм <br>
+            <input type="checkbox" name="option2" value="a2">Влажный корм <br>
+            <input type="checkbox" name="option3" value="a3">Натуральный корм <br>
+        </div>
+        <br>
+        <div>
+            Укажите пол питомца *<br>
+            <input type="radio" name="sex" required>Самец <br>
+            <input type="radio" name="sex" required>Самка
+        </div>
+        <br>
+        <div>
+            Комментарии <br />
+            <textarea rows="10" cols="60"></textarea>
+        </div> <br>
+        <div>
+            Приложить фото питомца *<br>
+            <input type="file" multiple="multiple" required>
+        </div> <br>
+        <div><button>Сохранить</button></div><br>
+    </form>
+</body>
+
+</html>
